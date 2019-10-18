@@ -15,7 +15,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="storage/uploads/images/2019-06-30.png" alt="First slide">
+      <img class="d-block w-100" src="{{ storage_path('app/public/uploads/images/2019-06-30.png') }}" alt="First slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="storage/uploads/images/web.png" alt="Second slide">
