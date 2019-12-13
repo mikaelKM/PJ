@@ -69,3 +69,7 @@ Route::post('/register', 'RegistrationController@store');
 Route::get('/log', 'SessionsController@create');
 Route::post('/log', 'SessionsController@store');
 Route::get('/logout', 'SessionsController@destroy');
+
+
+Route::view('/bulksms', 'mikael.bulksms');
+Route::post('/bulksms', 'BulkSmsController@sendSms');

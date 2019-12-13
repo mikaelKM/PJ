@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section ('content')
-<h3><strong>Tablates</strong></h3>
+<h3><strong>Tamplates</strong></h3>
 <div class="card bg-dark text-white">
     <div class="card-body">
  <img class="card-img" src="storage/uploads/images/beach-clouds-dawn-635279.png" alt="Card image">
@@ -13,9 +13,10 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
+  <div 
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pclass="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="{{ storage_path('app/public/uploads/images/2019-06-30.png') }}" alt="First slide">
+      <img class="d-block w-100" src="storage/uploads/images/2019-06-30.png" alt="First slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="storage/uploads/images/web.png" alt="Second slide">
