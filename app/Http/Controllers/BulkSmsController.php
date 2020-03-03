@@ -18,14 +18,14 @@ class BulkSmsController extends Controller
 
        $validator = Validator::make($request->all(), [
            'numbers' => 'required',
-           'message' => 'required'
+         //  'message' => 'required'
        ]);
 
        if ( $validator->passes() ) {
 
            $numbers_in_arrays = explode( ',' , $request->input( 'numbers' ) );
-
-           $message = $request->input( 'message' );
+           $message = rand(100000, 900000);
+           //$message = $request->input( 'message' );
            $count = 0;
 
            foreach( $numbers_in_arrays as $number )

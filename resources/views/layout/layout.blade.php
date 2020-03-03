@@ -14,7 +14,7 @@
 </header>
 <main>
 	<div class="container">
-    @include('includes.success')
+    
     @if (Request :: is('/'))
     @include('includes.home')
     @endif

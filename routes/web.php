@@ -73,3 +73,6 @@ Route::get('/logout', 'SessionsController@destroy');
 
 Route::view('/bulksms', 'mikael.bulksms');
 Route::post('/bulksms', 'BulkSmsController@sendSms');
+
+Route::get('/verify', 'VerifyController@veryfy');
+Route::post('/verify', 'VerifyController@verification');

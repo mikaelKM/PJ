@@ -8,7 +8,7 @@ This Is mikael Site
 <div class="card-footer">
 <div class='list-inline'>
                                       <ul>  <li class='list-inline-item'>
-                                            <a class='social-icon text-xs-center' target='_blank' href='https://mobile.facebook.com/mikael.kasike'>
+                                            <a class='social-icon text-xs-center' target='_blank' href='https://facebook.com/mikael.kasike'>
                                                 <i class='fa fa-facebook' style="font-size:30px"></i>
                                             </a>
                                         </li>
@@ -23,7 +23,7 @@ This Is mikael Site
                                             </a>
                                         </li>
                                         <li class='list-inline-item'>
-                                            <a class='social-icon text-xs-center' target='_blank' href='https://wa.me/+254772003344'>
+                                            <a class='social-icon text-xs-center' target='_blank' href='https://wa.me/+254790918862'>
                                                 <i class='fa fa-whatsapp' style="font-size:30px"></i>
                                             </a>
                                         </li>

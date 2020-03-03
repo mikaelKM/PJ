@@ -14,23 +14,32 @@
     <div class="row">
     <div class="col-md-6">
     <label for="fname">First Name</label>
-    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name">
+    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
     </div>
     <div class="col-md-6">
     <label for="sname">Second Name</label>
-    <input type="text" name="sname" class="form-control" id="sname" placeholder="Second Name">
+    <input type="text" name="sname" class="form-control" id="sname" placeholder="Second Name" required>
     </div>
     </div>
   </div>
   <div class="form-group">
     <label for="Password">Username</label>
-    <input type="text" name="name" class="form-control" id="name" placeholder="Username">
+    <input type="text" name="name" class="form-control" id="name" placeholder="Username" required>
   </div>
   <div class="form-group">
+  <div class="row">
+  <div class="col-md-6">
     <label for="Email">Email address</label>
-    <input type="email" name="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" name="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
+  <div class="col-md-6">
+  <label for="phone">Phone</label>
+    <input type="text" name="phone" class="form-control" id="phone" placeholder="+254........." required>
+    <small id="phoneHelp" class="form-text text-muted">This phone number will be used for verification</small>
+</div>
+</div>
+</div>
   <div class="form-group">
     <label for="avatar" class="form-label">{{ __('Avatar (optional)') }}</label>
     <div class="col-md-12">
@@ -39,12 +48,12 @@
 </div>
   <div class="form-group">
     <label for="Password">Password</label>
-    <input type="password" name="password" class="form-control" id="password1" placeholder="Password">
+    <input type="password" name="password" class="form-control" id="password1" placeholder="Password" required>
   </div>
   <div class="form-group">
             <label for="password_confirmation">Password Confirmation:</label>
             <input type="password" class="form-control" id="password_confirmation"
-                   name="password_confirmation">
+                   name="password_confirmation" required>
         </div>
   <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">

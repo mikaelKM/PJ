@@ -26,7 +26,8 @@ class hiresController extends Controller
             'mode'=>'required',
             'attachment'=>'mimes:jpeg,png,jpg,svg,docx,pdf,pptx,txt|max:4048',
             'description'=>'required',
-        ]); //adding attributes to the post form
+        ]); 
+        //adding attributes to the post form
         $hires = new Hire([
             'project_name'    =>  $request->get('project_name'),
             'type'     =>  $request->get('project_type'),
@@ -36,7 +37,9 @@ class hiresController extends Controller
             'location'    =>  $request->get('location'),
             //'attachment'    =>  $request->get('attachment'),
             'description'    =>  $request->get('description'),
-        ]); //making sure everything other than the attachment has been entered in the correct format 'validating'
+        ]); 
+        
+        //making sure everything other than the attachment has been entered in the correct format 'validating'
         if($request->hasFile('attachment')){
             $file = $request->file('attachment');
             $filename = time() . '.' . $file->getClientOriginalExtension(); //changing the file name
