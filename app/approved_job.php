@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Hire extends Model
+class approved_job extends Model
 {
     protected $fillable = [
         'user',
@@ -17,5 +17,5 @@ class Hire extends Model
         'location', 
         'attachment', 
         'description'
-    ];
+    ]; //
 }

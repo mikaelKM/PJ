@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">MIKAEL DOT COM</a>
+  <a class="navbar-brand" href="/"><IMG SRC="storage/uploads/images/logo.png" ALT="MIKAEL DOT COM" WIDTH=150 HEIGHT=50></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

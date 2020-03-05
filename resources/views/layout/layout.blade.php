@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/app.css">
   <!--  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/jpg" href="storage/uploads/images/fev.png"/>
 
 </head>
 <header>

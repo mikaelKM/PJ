@@ -1,9 +1,12 @@
 @extends('layout.layout')
 @section ('content')
+
 @if((auth()->check()) && (Request :: is('jobs')))
 <h3>Hello {{ auth()->user()->name }}, You are not allowed to view this page</h3>
 @else
-<h3>THE uploaded Tasks</h3>
+@include('includes.success')
+@include('includes.errors')
+<h3>The uploaded Tasks</h3>
 <table class="table table-hover table-dark">
   <thead>
     <tr>
@@ -38,13 +41,23 @@
       <td>{{ $row['attachment'] }}</td>
       <td>{{ $row['Description'] }}</td>
       <td>{{ $row['created_at'] }}</td>
-      <td><a href="{{ action('hiresController@approve', $row['id']) }}"> <button class='btn btn-info'>Approve</button></a></td>
-      <td><a href=><form method="POST" class="delete_form" action="{{ action('hiresController@delete',$row['id']) }}">
+      <td>
+     
+     <a href=><form method="POST" class="approve_form" action="{{ action('hiresController@approve', $row['id']) }}"> 
+      {{csrf_field()}} 
+     <input type="hidden" name="_method" value="GET">
+      <button type="submit" class='btn btn-primary' onclick="return confirm('Approve this project for completion')">Approve</button></form></a>
+      </td>
+
+      <td>
+      <a href=><form method="POST" class="delete_form" action="{{ action('hiresController@delete',$row['id']) }}">
       {{csrf_field()}}
    <input type="hidden" name="_method" value="DELETE" >
       <button type="submit" class="btn btn-danger" onclick="return confirm('Confirm to delete?')">Delete</button>
-     </form></a></td>
+     </form></a>
+     </td>
     </tr>
+    
   @endforeach
   </tbody>
   <tfoot>

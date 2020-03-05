@@ -48,7 +48,7 @@ Route::get('approve', [
     'uses' => 'hiresController@delete'
   ]);
 */
-  Route::post('delete', [
+  Route::get('delete', [
     'uses' => 'hiresController@delete'
   ]);
 /*
@@ -57,7 +57,8 @@ Route::get('approve', [
   ]);
   */
 
-Route::delete('/delete{?id}', 'hiresController@delete');
+Route::delete('/delete/{id}', 'hiresController@delete');
+Route::get('/approve/{id}', 'hiresController@approve');
 
 Route::get('/hire', 'hiresController@order');
 Route::post('/hire', 'hiresController@post');
